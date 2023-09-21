@@ -10,5 +10,10 @@ class Pasien extends Model
     use HasFactory;
     protected $table = 'pasien';
     protected $guarded = ['id'];
+    
+    public function location()
+    {
+        return $this->hasOne(Location::class);
+    }
 
 }

@@ -53,7 +53,11 @@
                             <tr>
                                 <th>Alamat koordinat</th>
                                 <td>
-                                    {!! $pasien->alamat_koordinat !!}
+                                    {!! $pasien->alamat_koordinat !!}<br>
+                                    <a href="https://www.openstreetmap.org/?mlat=1.7310657655672665&mlon=124.75765611235484#map=16/1.7311/124.7577" target="_blank">
+                                    <i class="fa fa-map"></i>    Lihat Lokasi Pasien
+                                    </a>
+
                                 </td>
                             </tr>
                         </table>

@@ -1,6 +1,14 @@
 @extends('admin.layouts.base')
 
 @section('content')
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+/>
+<script
+  src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+></script>
+
 <div class="container">
     <div class="card">
         <div class="card-header">
@@ -52,10 +60,9 @@
                     <label for="berat_badan">Berat Badan (kg):</label>
                     <input type="text" name="berat_badan" id="berat_badan" class="form-control" placeholder="Masukkan Berat Badan">
                 </div>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22236.29838665768!2d124.74744709058905!3d1.7131578396351752!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x32879396ba513c79%3A0x345602d7c938f46d!2sPulau%20Manterawu!5e0!3m2!1sid!2sid!4v1692365980984!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe><br>
                 <div class="form-group">
-                    <label for="alamat_koordinat">Koordinat Alamat:</label>
-                    <input type="text" name="alamat_koordinat" id="alamat_koordinat" class="form-control" placeholder="Masukkan Koordinat Alamat">
+                    <label for="berat_badan">Koordinat Alamat:</label>
+                    <input type="text" name="alamat_koordinat" id="alamat_koordinat" class="form-control" placeholder="(longitude,langitude)">
                 </div>
                 <button type="submit" class="btn btn-success"><i class="fas fa-plus"></i> Submit</button>
             </form>

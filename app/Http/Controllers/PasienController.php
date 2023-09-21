@@ -8,8 +8,7 @@ use App\Models\RekamMedis;
 use PDF;
 use Illuminate\Support\Facades\Auth;
 
-class PasienController extends Controller
-{
+class PasienController extends Controller{
     public function index()
     {
         $data_pasien = Pasien::paginate(10);
